@@ -1,0 +1,123 @@
+:root{
+    --bd-blue: #2b74e2;
+    --bd-blue-rgb: 53, 131, 220;
+     }
+
+/* body{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+} */
+
+/* .navbar .navbar-expand-lg .bg-primary{
+    background:#0b91da !important;
+    margin-top: 0;
+    
+} */
+/* al pasar el mouse por los iconos de redes */
+i.fa-brands:hover{
+    color: #ffffff;
+}
+/* icono login */
+i.fa-solid:hover{
+    color: #ffffff;
+}
+.navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* fondos de los iconos */
+.list-group{
+   --bs-list-group-bg: transparent;
+   --bs-list-group-border-width: 0px;
+}
+
+section.perfil{
+    margin-top: 1rem;
+}
+.banner{
+    box-shadow: 0 2px 6px #565656;
+    border-radius: 5px;
+}
+
+.bd-navbar{
+    padding:0 0;
+    border-radius: 5px;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(var(--bd-blue-rgb), 1), rgba(var(--bd-blue-rgb), 0.75));
+    box-shadow: 0 2px 6px #565656;
+    z-index: 5000;
+
+}
+/* posiciono la foto de perfil */
+section.about  {
+    margin-top: -5rem;
+}
+
+section.dashboard, section.panel{
+    margin-top: 1rem;
+}   
+/* .bd-navbar .navbar-toggler{
+    padding:0;
+    margin-right:-.5rem;
+    border:0} */
+    
+/* .bd-navbar .navbar-toggler:first-child{
+    margin-left:-.5rem} */
+    
+/* .bd-navbar .navbar-toggler .bi{
+    width:1.5rem;
+    height:1.5rem} */
+    
+/* .bd-navbar .navbar-toggler:focus{
+    box-shadow:none} */
+    
+/* .bd-navbar .navbar-brand{
+    transition:.2s ease-in-out transform} */
+
+/* .bd-navbar .navbar-brand:hover{
+    transform:rotate(-5deg) scale(1.1)} */
+    
+/* .bd-navbar .navbar-toggler,.bd-navbar .nav-link{
+    padding-right:.25rem;
+    padding-left:.25rem;
+    color:rgba(255,255,255,0.85)} */
+    
+/* .bd-navbar .navbar-toggler:hover,.bd-navbar .navbar-toggler:focus,.bd-navbar .nav-link:hover,.bd-navbar .nav-link:focus{
+    color:#fff} */
+    
+/* .bd-navbar .navbar-toggler.active,.bd-navbar .nav-link.active{
+    font-weight:600;
+    color:#fff} */
+    
+/* .bd-navbar .navbar-nav-svg{
+    display:inline-block;
+    vertical-align:-.125rem} */
+    
+/* .bd-navbar .offcanvas-lg{
+    background-color:var(--bd-violet);
+    border-left:0} */
+    
+/* @media (max-width: 991.98px){
+    .bd-navbar .offcanvas-lg{
+        box-shadow:0 1rem 3rem rgba(0,0,0,0.175)}
+    } */
+/* .bd-navbar .dropdown-toggle:focus:not(:focus-visible){
+    outline:0} */
+    
+/* .bd-navbar .dropdown-menu{
+    --bs-dropdown-min-width: 12rem;
+    --bs-dropdown-link-hover-bg: rgba(var(--bd-violet-rgb), .1);
+    --bs-dropdown-font-size:.875rem;
+    box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15)} */
+
+/* .bd-navbar .dropdown-item.current{
+    font-weight:600;
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23292b2c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat:no-repeat;
+    background-position:right 1rem top 0.6rem;
+    background-size:.75rem .75rem} */
+                            
+ 

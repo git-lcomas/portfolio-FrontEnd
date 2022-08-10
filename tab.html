@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Luis Comas">
+    <meta name="copyright" content="@2022 Luis Comas">
+    <meta name="description" content="Portfolio de Luis Comas">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/88c51239fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+    <title>Tab</title>
+</head>
+<body>
+  <header>
+    <!--navbar dede css -->
+    <!-- <nav class="navbar fixed-top navbar-expand-lg bg-primary"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="assests/img/APLogo-black.png" alt="" width="20%" height="">
+          </a>
+          
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><i class="fa-brands fa-instagram fa-xl"></i></li>
+            <li class="list-group-item"><i class="fa-brands fa-facebook fa-xl"></i></li>
+            <li class="list-group-item"><i class="fa-brands fa-linkedin fa-xl"></i></li>
+            <!-- Botón que activa el modal de login -->
+            <li class="list-group-item">                    
+              <i class="fa-solid fa-user fa-user-unlock fa-xl" type="button"></i>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <section id="panel" class="panel">
+      <div class="container text-center">
+        <div class="row g-2 g-lg-3">
+          <!-- Primera fila -->
+          <div class="col">
+            <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa-solid fa-user fa-2xl"></i></button></div>
+          </div>
+          <div class="col">
+            <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa-solid fa-image fa-xl"></i></button></div>
+          </div>
+          <div class="col">
+            <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa-solid fa-dumbbell fa-xl"></i></button></div>
+          </div>
+          <!-- Fin primera fila -->
+          <!-- Segunda fila -->
+          <div class="row mt-2 g-2 g-lg-3">
+            <div class="col">
+              <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#educacionModal">
+              <i class="fa-solid fa-graduation-cap fa-xl"></i></button></div>
+            </div>
+            <div class="col">
+              <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#infoModal">
+                <i class="fa-solid fa-plus fa-xl"></i></button></div>
+              </div>
+            <div class="col">
+              <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#trabajoModal">
+                <i class="fa-solid fa-briefcase fa-xl"></i></button></div>
+              </div>
+          </div>
+          <!-- Fin segunda fila -->
+          <!-- Tercera fila -->         
+          <div class="row mt-2 g-2 g-lg-3">
+            <div class="col">
+              <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa-solid fa-share-nodes fa-xl"></i></button></div>
+            </div>
+            <div class="col">
+              <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa-solid fa-comment fa-xl"></i></button></div>
+            </div>
+            <div class="col">
+              <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa-solid fa-folder fa-xl"></i></button></div>
+            </div>
+          </div>
+          <!-- Fin tercera fila -->
+        </div>
+      </div>
+    </section>
+  </main>  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <footer>
+    
+    </footer>
+    <!--Inicio Modal Educación -->
+    <div class="modal fade" id="educacionModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModal">Educación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!--form con correo y clave -->
+          <div class="modal-body">                        
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Correo</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="staticEmail" value="email@dominio.com">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+          </div>
+          <!--pie del modal-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary btn-lg p-5">Iniciar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin Modal Educación-->
+    <!--Inicio Modal Info -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoModal">Info</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!--form con correo y clave -->
+          <div class="modal-body">                        
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Correo</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="staticEmail" value="email@dominio.com">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+          </div>
+          <!--pie del modal-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary btn-lg p-5">Iniciar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin Modal Educación-->
+    <!--Inicio Modal Trabajo -->
+    <div class="modal fade" id="trabajoModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="trabajoModal">Trabajo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!--form con correo y clave -->
+          <div class="modal-body">                        
+            <div class="mb-3 row">
+              <label for="formFile" class="form-label">Logo empresa</label>
+              <div class="col-sm-12">
+                <input class="form-control" type="file" id="formFile">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="formFile" class="form-label">Título del puesto</label>
+              <div class="col-sm-12">
+                <input class="form-control" type="text" id="formFile">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="formFile" class="form-label">Descripción del puesto</label>
+              <div class="col-sm-12">
+                <textarea class="form-control" type="text" id="formFile"></textarea>
+              </div>
+            </div>
+          </div>
+          <!--pie del modal-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin Modal Trabajo-->
+
+
+
+</body>
+</html>
