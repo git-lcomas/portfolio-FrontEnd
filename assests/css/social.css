@@ -1,0 +1,54 @@
+.social {
+    position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    top: 200px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px #565656;
+    background: #f3f3f3; 
+    border-color: #d1d1d1 #e7e7e7 #e4e4e4;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    list-style: none;
+    padding: 1% 1%;
+    text-align: center;
+    margin: 0px;
+    z-index: 5000;
+  }
+  
+  .social li:first-child {
+    margin-top: 10;
+  }
+  
+  .social li {
+    margin-top: 20%;
+  }
+  
+  .social li a {
+    display: block;
+    background: #999999;
+    color: #efefef;
+    border-radius: 15px;
+    text-decoration:solid;
+    line-height: 30px;
+    width: 30px;
+    font-size: 15px;
+  }
+ 
+  .social a.ig:hover {
+    background: #f01a2f
+  }
+  .social a.fb:hover {
+    background: #3b5998
+  }
+  .social a.le:hover {
+    background: #2367dc
+  }
+  .social a.tw:hover {
+    background: #00acee
+  }
+  .social a.em:hover {
+    background: #00acee
+  }
+ 
+  

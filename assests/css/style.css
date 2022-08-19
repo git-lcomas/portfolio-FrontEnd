@@ -13,100 +13,322 @@
 /* .navbar .navbar-expand-lg .bg-primary{
     background:#0b91da !important;
     margin-top: 0;
-    
+
 } */
 /* al pasar el mouse por los iconos de redes */
-i.fa-brands:hover{
+/* i.fa-brands:hover{
     color: #ffffff;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.25);
+} */
+.header-acercade {
+    /* border-radius: 1rem;
+    margin: 1rem 1rem;
+    padding: 2rem; */
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(53, 131, 220);
 }
 /* icono login */
-i.fa-solid:hover{
+.list-group-item:hover{
     color: #ffffff;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.25);
 }
 .navbar-brand{
     padding-top: 0;
     padding-bottom: 0;
+    border-bottom-right-radius: 10px;
 }
-
-/* fondos de los iconos */
-.list-group{
-   --bs-list-group-bg: transparent;
-   --bs-list-group-border-width: 0px;
-}
-
-section.perfil{
-    margin-top: 1rem;
-}
-.banner{
-    box-shadow: 0 2px 6px #565656;
-    border-radius: 5px;
-}
-
 .bd-navbar{
     padding:0 0;
-    border-radius: 5px;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(var(--bd-blue-rgb), 1), rgba(var(--bd-blue-rgb), 0.75));
+    background-image: linear-gradient(to bottom, rgba(var(--bd-blue-rgb), 1), rgba(var(--bd-blue-rgb), 0.55));
     box-shadow: 0 2px 6px #565656;
     z-index: 5000;
 
 }
-/* posiciono la foto de perfil */
-section.about  {
-    margin-top: -5rem;
+/* fondos de los iconos de redes */
+.list-group{
+   --bs-list-group-bg: transparent;
+   --bs-list-group-border-width: 0px;
+}
+.banner{
+    box-shadow: 0 2px 6px #565656;
+    border-radius: 5px;
+
 }
 
+/* foto de perfil */
+.foto-perfil  {
+    width: 100%;
+    margin-top: -7.5rem;
+    position: relative;
+    border-radius: 50%;
+    border: 0.2rem solid;
+    border-color: white;
+}
+#btn-edt-sobremi {
+    margin-top: 0rem;
+    margin-left: -1rem;
+    /* visibility: hidden; */
+}
 section.dashboard, section.panel{
     margin-top: 1rem;
-}   
+}
+.up{
+
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+/* == EXPERIENCIA =====================*/
+#titulo-experiencia {
+    margin-top: 0rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;;
+    background-color:rgb(53, 131, 220);
+}
+#borde-experiencia {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(53, 131, 220);
+}
+#logo-castillo  {
+    width: 90%;
+    margin-top: 0rem;
+    border-radius: 50%;
+    border: 0rem solid;
+    border-color: white;
+}
+#logo-cofaral  {
+    width: 90%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border: 0rem solid;
+    border-color: red;
+}
+/* == EDUCACION ======================*/
+#titulo-educacion {
+    margin-top: 0rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;;
+    background-color:rgb(53, 131, 220);
+}
+#borde-educacion {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(53, 131, 220);
+}
+#logo-unt {
+    width: 90%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#logo-FAU {
+    width: 60%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#logo-IT {
+    width: 70%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#logo-AP {
+    width: 70%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+/* == SKILLS ======================*/
+#titulo-skills {
+    margin-top: 0rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;;
+    background-color:rgb(53, 131, 220);
+}
+#borde-skills {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(53, 131, 220);
+}
+#logo-PS {
+    width: 70%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+    
+}
+#skill-photoshop{
+    background-color: #319eb4;
+}
+#logo-lightroom {
+    width: 100%;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#skill-lightroom{
+    background-color: #319eb4;
+}
+#logo-HTML {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#skill-HTML{
+    background-color: #e86418;
+}
+#logo-CSS {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#skill-CSS{
+    background-color: #224bef;
+}
+#logo-JS {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#skill-JS{
+    background-color: #6fcf21;
+}
+
+#logo-angular {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#skill-angular{
+    background-color: #e86418;
+}
+
+#logo-bootstrap {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+#skill-bootstrap{
+    background-color: #623bdf;
+}
+/* PROYECTOS =======================*/
+#titulo-proyectos {
+    margin-top: 0rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;;
+    background-color:rgb(53, 131, 220);
+}
+#borde-proyectos {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(53, 131, 220);
+}
+#logo-proyectos-fullstack {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    border-color: white;
+}
+/* BARRA PROGRRESO =======================*/
+.progress {
+    border: 1px solid #ccc;
+    position: relative;
+    display: block;
+    height: 20px;
+    padding: 0;
+    min-width: 200px;
+    margin:4px 0;
+    background: #DEDEDE;
+    box-shadow: 0 2px 6px #565656;
+}
+.progress-bar {
+    color: black;
+}
 /* .bd-navbar .navbar-toggler{
     padding:0;
     margin-right:-.5rem;
     border:0} */
-    
+
 /* .bd-navbar .navbar-toggler:first-child{
     margin-left:-.5rem} */
-    
+
 /* .bd-navbar .navbar-toggler .bi{
     width:1.5rem;
     height:1.5rem} */
-    
+
 /* .bd-navbar .navbar-toggler:focus{
     box-shadow:none} */
-    
+
 /* .bd-navbar .navbar-brand{
     transition:.2s ease-in-out transform} */
 
 /* .bd-navbar .navbar-brand:hover{
     transform:rotate(-5deg) scale(1.1)} */
-    
+
 /* .bd-navbar .navbar-toggler,.bd-navbar .nav-link{
     padding-right:.25rem;
     padding-left:.25rem;
     color:rgba(255,255,255,0.85)} */
-    
+
 /* .bd-navbar .navbar-toggler:hover,.bd-navbar .navbar-toggler:focus,.bd-navbar .nav-link:hover,.bd-navbar .nav-link:focus{
     color:#fff} */
-    
+
 /* .bd-navbar .navbar-toggler.active,.bd-navbar .nav-link.active{
     font-weight:600;
     color:#fff} */
-    
+
 /* .bd-navbar .navbar-nav-svg{
     display:inline-block;
     vertical-align:-.125rem} */
-    
+
 /* .bd-navbar .offcanvas-lg{
     background-color:var(--bd-violet);
     border-left:0} */
-    
+
 /* @media (max-width: 991.98px){
     .bd-navbar .offcanvas-lg{
         box-shadow:0 1rem 3rem rgba(0,0,0,0.175)}
     } */
 /* .bd-navbar .dropdown-toggle:focus:not(:focus-visible){
     outline:0} */
-    
+
 /* .bd-navbar .dropdown-menu{
     --bs-dropdown-min-width: 12rem;
     --bs-dropdown-link-hover-bg: rgba(var(--bd-violet-rgb), .1);
@@ -119,5 +341,4 @@ section.dashboard, section.panel{
     background-repeat:no-repeat;
     background-position:right 1rem top 0.6rem;
     background-size:.75rem .75rem} */
-                            
- 
+
