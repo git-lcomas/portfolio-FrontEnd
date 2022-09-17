@@ -1,112 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Quicksand&family=Raleway&family=Righteous&family=Roboto&family=Ubuntu:wght@300&family=Yellowtail&display=swap');
+
 :root{
-    --bd-blue: #2b74e2;
-    --bd-blue-rgb: 53, 131, 220;
+    /* --bd-blue: #8d8b16; */
+    --bd-color1: 230, 159, 28;
+    --bd-color2: 56, 146, 53;
      }
-
-/* body{
-    background-image: url(../img/banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+     /* 53, 131, 220 */
+body{
+    /* background-image: url(../img/fondo-body.jpg); */
+    /* background: linear-gradient(to right, red, orange, yellow, green, blue); */
+    /* background: linear-gradient(to bottom, orange, white 20%, orange); */
+    background-size:cover;
+    /* background-repeat:no-repeat; */
+    background-blend-mode:luminosity;
     min-height: 100vh;
-} */
-
-/* .navbar .navbar-expand-lg .bg-primary{
-    background:#0b91da !important;
-    margin-top: 0;
-    
-} */
-/* al pasar el mouse por los iconos de redes */
-i.fa-brands:hover{
-    color: #ffffff;
+    color: black; /* color fuente */
 }
-/* icono login */
-i.fa-solid:hover{
-    color: #ffffff;
+a:link, a:visited, a:active { 
+    text-decoration:none;
+    color:inherit;
 }
 .navbar-brand{
     padding-top: 0;
     padding-bottom: 0;
+    border-bottom-right-radius: 10px;
 }
-
-/* fondos de los iconos */
+.bd-navbar{
+    padding:0 0;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    /* background-color: transparent; */
+    background-image: linear-gradient(to bottom, rgba(var(--bd-color1), 1), rgba(var(--bd-color1), 0.15));
+    /* background-image: linear-gradient(to bottom, rgba(#2b74e2, 1), rgba(53, 131, 220), 0.55)); */
+    box-shadow: 0 2px 6px #565656;
+    z-index: 5000;
+}
+/* iconos de redes */
 .list-group{
    --bs-list-group-bg: transparent;
    --bs-list-group-border-width: 0px;
 }
-
-section.perfil{
-    margin-top: 1rem;
+/* icono login */
+.list-group-item:hover{
+    color: #ffffff;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.25);
 }
+
 .banner{
-    box-shadow: 0 2px 6px #565656;
+    box-shadow: 0 5px 10px #181818;
     border-radius: 5px;
 }
 
-.bd-navbar{
-    padding:0 0;
-    border-radius: 5px;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(var(--bd-blue-rgb), 1), rgba(var(--bd-blue-rgb), 0.75));
-    box-shadow: 0 2px 6px #565656;
-    z-index: 5000;
-
+/* foto de perfil */
+.foto-perfil  {
+    width: 100%;
+    margin-top: -7.5rem;
+    position: relative;
+    border-radius: 50%;
+    border: 0.1rem solid;
+    border-color: white;
+    box-shadow: 0 5px 10px #181818;
+    /* filter: grayscale(100%); */
+ }
+ 
+/* @media screen and (max-width: 1024px) and (min-width:768px) {
+    .foto-perfil{
+        margin-top: -5rem;
+    }
 }
-/* posiciono la foto de perfil */
-section.about  {
-    margin-top: -5rem;
-}
 
-section.dashboard, section.panel{
+@media screen and (max-width: 1440px) and (min-width:1024px) {
+    .foto-perfil{
+        margin-top: -3rem;
+    }
+} */
+.foto-contacto  {
+    width: 100%;
+    margin-top: -5.5rem;
+    position: relative;
+    border-radius: 50%;
+    border: 0.1rem solid;
+    border-color: black;
+    z-index: 1;
+}
+.tarjeta-contacto  {
+    width: 100%;
+    margin-top: -2.5rem;
+    position: relative;
+    border-radius: 2%;
+    border: 0.0rem solid;
+    border-color: black;
+}
+/* == BOTONES ================================== */
+.btn-edit{
+    padding: 0rem;
+    /* display:none */
+    /* visibility: hidden; */
+ }
+.btn-eliminar{
+    padding: 0rem;
+    /* display:none */
+    /* visibility: hidden; */
+ }
+ /* solo el boton editar del perfil */
+#btn-edt-perfil {
+    text-align:start;
     margin-top: 1rem;
-}   
+    margin-left: -1rem;
+    z-index: 0;
+}
+
+/* todos los botones editar y eliminar */
+.btn-edt{ 
+    text-align: end;
+}
+
+/* #titulo-experiencia{
+    text-align: end;
+} */
+/* .agregar{
+    border-style;
+} */
+/* section.dashboard, section.panel{
+    margin-top: 1rem;
+} */
+/* == BOTON IR ARRIBA ========== */
+.up{
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+/* == FUENTES ======================================================================== */
+/* font-family: 'Convergence', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Yellowtail', cursive; */
+#info-data h1 {
+    font-family: 'Righteous', cursive;
+}
+#sobre-mi h4 {
+    text-align:start
+    
+}
+#sobre-mi, #experiencia, #educacion, #skills, #proyectos{
+    font-family:'Raleway', sans-serif;
+}
+#titulo1, #titulo2, #titulo3, #info-contacto {
+    font-family: 'Ubuntu', sans-serif;
+}
+.progress h6 {
+    font-family: 'Righteous', cursive; /* porcentaje skills*/
+}
+.olvido-nomcla {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* == TITULOS ======================================================================== */
+#titulo-experiencia, #titulo-educacion, #titulo-skills, #titulo-proyectos{
+    font-family:'Convergence', sans-serif;
+    color: #000000;
+    /* text-shadow: 0 0 5px #ee0606; */
+    margin-top: 0rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0 5px 10px #181818;
+    /* background-color:rgb(53, 131, 220); */
+    background: linear-gradient(to bottom, rgba(var(--bd-color1), 1), rgba(var(--bd-color1), 0.55));
+}
+
+/* == BORDES ========================================================================= */
+.header-acercade, #borde-experiencia, #borde-educacion, #borde-skills, #borde-proyectos, footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: #dfa21f42;
+    box-shadow: 0 10px 15px #181818;
+    background: linear-gradient(to bottom, rgba(var(--bd-color1), .55), rgba(var(--bd-color1), 0.25));;
+}
+.header-acercade {
+    border-radius: 1rem;
+    margin: 0rem 0rem;
+    padding: 0rem;
+}
+/* == VENTANA MODAL LOGIN =========================================================== */
+/* .modal-body{
+    z-index: 50000;
+} */
+.modal-content{
+    box-shadow: 0 10px 15px #181818;
+    
+}
+ .modal {
+     /* --bs-modal-zindex: 1055; */
+   /* --bs-modal-width: 500px;
+    --bs-modal-padding: 1rem;
+    --bs-modal-margin: 0.5rem;
+    --bs-modal-color: ; */
+    --bs-modal-bg: #fab17a;
+} 
+
+#ayuda-correo {
+    font-size: 0.7rem;
+}
+
+
+/* == LOGOS ========================================================================== */
+#logo-castillo, #logo-cofaral, #logo-unt, #logo-FAU, #logo-IT, #logo-AP
+ {
+    width: 80%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    filter:drop-shadow(0 10px 15px #181818);
+    /* box-shadow: 0 10px 15px #181818; */
+}
+
+img:hover{
+    /* box-shadow: 0 10px 15px #181818; */
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.05);
+}
+.foto-perfil:hover{
+    transition: none;
+    transform:none;
+}
+.banner1:hover{
+    transition: none;
+    transform:none;
+}
+
+#logo-PS, #logo-lightroom, #logo-HTML, #logo-CSS, #logo-JS, #logo-angular, #logo-bootstrap
+{
+    width: 50%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    filter:drop-shadow(0 10px 15px #181818);
+}
+#logo-fullstack {
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: 0%;
+    filter:drop-shadow(0 10px 15px #181818);
+}
+/* == FONDO BARRA SKILLS ============================================================= */
+
+#skill-photoshop{
+    background-color: #319eb4;
+}
+#skill-lightroom{
+    background-color: #319eb4;
+}
+#skill-HTML{
+    background-color: #494949;
+}
+#skill-CSS{
+    background-color: #ef6322;
+}
+#skill-JS{
+    background-color: #d68b21;
+}
+#skill-angular{
+    background-color: #ed420e;
+}
+#skill-bootstrap{
+    background-color: #623bdf;
+}
+
+/* == BARRA PROGRRESO ================================================================ */
+.progress {
+    border: 1px solid #ccc;
+    position: relative;
+    display: block;
+    height: 20px;
+    padding: 0;
+    min-width: 50%;
+    margin:4px 0;
+    background: #DEDEDE;
+    box-shadow: 0 2px 6px #565656;
+    
+}
+.progress-bar {
+    color: black;
+}
+
+footer{
+    padding:0 0;
+    border-radius: 1rem;
+    font-family:'Convergence', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(var(--bd-color1), 1), rgba(var(--bd-color1), 0.15));
+    /* box-shadow: 0 2px 6px #565656; */
+}
 /* .bd-navbar .navbar-toggler{
     padding:0;
     margin-right:-.5rem;
     border:0} */
-    
+
 /* .bd-navbar .navbar-toggler:first-child{
     margin-left:-.5rem} */
-    
+
 /* .bd-navbar .navbar-toggler .bi{
     width:1.5rem;
     height:1.5rem} */
-    
+
 /* .bd-navbar .navbar-toggler:focus{
     box-shadow:none} */
-    
+
 /* .bd-navbar .navbar-brand{
     transition:.2s ease-in-out transform} */
 
 /* .bd-navbar .navbar-brand:hover{
     transform:rotate(-5deg) scale(1.1)} */
-    
+
 /* .bd-navbar .navbar-toggler,.bd-navbar .nav-link{
     padding-right:.25rem;
     padding-left:.25rem;
     color:rgba(255,255,255,0.85)} */
-    
+
 /* .bd-navbar .navbar-toggler:hover,.bd-navbar .navbar-toggler:focus,.bd-navbar .nav-link:hover,.bd-navbar .nav-link:focus{
     color:#fff} */
-    
+
 /* .bd-navbar .navbar-toggler.active,.bd-navbar .nav-link.active{
     font-weight:600;
     color:#fff} */
-    
+
 /* .bd-navbar .navbar-nav-svg{
     display:inline-block;
     vertical-align:-.125rem} */
-    
+
 /* .bd-navbar .offcanvas-lg{
     background-color:var(--bd-violet);
     border-left:0} */
-    
+
 /* @media (max-width: 991.98px){
     .bd-navbar .offcanvas-lg{
         box-shadow:0 1rem 3rem rgba(0,0,0,0.175)}
     } */
 /* .bd-navbar .dropdown-toggle:focus:not(:focus-visible){
     outline:0} */
-    
+
 /* .bd-navbar .dropdown-menu{
     --bs-dropdown-min-width: 12rem;
     --bs-dropdown-link-hover-bg: rgba(var(--bd-violet-rgb), .1);
@@ -119,5 +365,4 @@ section.dashboard, section.panel{
     background-repeat:no-repeat;
     background-position:right 1rem top 0.6rem;
     background-size:.75rem .75rem} */
-                            
- 
+

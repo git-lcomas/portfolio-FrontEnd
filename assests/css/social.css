@@ -1,0 +1,181 @@
+ .social {
+    position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    top: 10rem;
+    box-shadow: 0 2px 6px #565656;
+    background: #f3f3f3;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    float: left;
+    list-style: none;
+    padding: .5rem .5rem;
+    text-align: center;
+    z-index: 5000;
+  }
+
+  .social li:first-child {
+    margin-top: .1rem;
+  }
+
+  .social li {
+    margin-top: 40%;
+  }
+
+  .social li a {
+    position: relative;
+    display: block;
+    background-color: #dbdee1;
+    color: #4c4145;
+    text-decoration:solid;
+    text-align: center;
+    line-height: 180%;
+    width: 35px;
+    font-size: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+.barra_social:after {
+    content: '';
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: solid 1px #dbdee1;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.barra_social:hover {
+    color: #ffffff;
+    background-color: rgb(230, 159, 28);
+}
+
+.barra_social:hover:after {
+    border-color:rgb(230, 159, 28);
+}
+
+/* .social--hide {
+    padding-top: 0;
+    position: relative;
+    width: 31px;
+    height: 31px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 20;
+    background-color: #ffd564;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+    .social--hide:before {
+        content: '+';
+        font: 18px 'Roboto', sans-serif;
+        color: #4c4145;
+        font-weight: bold;
+        position: absolute;
+        top: 3px;
+        left: 11px;
+    }
+
+    .social--hide .social__name {
+        padding-left: 27px;
+        padding-top: 5px;
+        display: inline-block;
+        font-size: 13px;
+        opacity: 0;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        -webkit-transition-delay: 0.1s;
+        -moz-transition-delay: 0.1s;
+        -o-transition-delay: 0.1s;
+        -ms-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
+
+    .social--hide .social__variant {
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        padding: 0 7px;
+        background-color: transparent;
+        font-size: 13px;
+        margin-left: 0;
+    }
+
+        .social--hide .social__variant:after {
+            display: none;
+        }
+
+        .social--hide .social__variant:hover {
+            background-color: transparent;
+            color: #fe505a;
+        }
+
+        .social--hide .social__variant.social--first {
+            left: 70px;
+        }
+
+        .social--hide .social__variant.social--second {
+            left: 96px;
+        }
+
+        .social--hide .social__variant.social--third {
+            left: 123px;
+        }
+
+    .social--hide:hover {
+        width: 170px;
+    }
+
+        .social--hide:hover .social__name {
+            opacity: 1;
+        }
+
+        .social--hide:hover .social__variant {
+            opacity: 1;
+            top: 9px;
+        }
+
+            .social--hide:hover .social__variant.social--first {
+                -webkit-transition-delay: 0.1s;
+                -moz-transition-delay: 0.1s;
+                -o-transition-delay: 0.1s;
+                -ms-transition-delay: 0.1s;
+                transition-delay: 0.1s;
+            }
+
+            .social--hide:hover .social__variant.social--second {
+                -webkit-transition-delay: 0.2s;
+                -moz-transition-delay: 0.2s;
+                -o-transition-delay: 0.2s;
+                -ms-transition-delay: 0.2s;
+                transition-delay: 0.2s;
+            }
+
+            .social--hide:hover .social__variant.social--third {
+                -webkit-transition-delay: 0.3s;
+                -moz-transition-delay: 0.3s;
+                -o-transition-delay: 0.3s;
+                -ms-transition-delay: 0.3s;
+                transition-delay: 0.3s;
+            } */
